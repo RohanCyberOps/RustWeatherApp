@@ -1,9 +1,10 @@
-# 🦀 wthrr-the-weathercrab
 
-[![][ci_shield]](https://github.com/ttytm/wthrr-the-weathercrab/actions/workflows/ci.yml?query=branch%3Amain)
-[![][last_commit_shield]](https://github.com/ttytm/wthrr-the-weathercrab/commits/main)
-[![][crates_io_shield]](https://crates.io/crates/wthrr)
-[![][msrv_shield]](https://github.com/ttytm/wthrr-the-weathercrab)
+# 🚀  Rust Weather App
+
+[![][ci_shield]](https://github.com/chrohangurjar1/RustWeatherApp/actions/workflows/ci.yml?query=branch%3Amain)
+[![][last_commit_shield]](https://github.com/chrohangurjar1/RustWeatherApp/commits/main)
+[![][crates_io_shield]](https://crates.io/crates/RustWeatherApp)
+[![][msrv_shield]](https://github.com/chrohangurjar1/RustWeatherApp)
 
 <div align="center">
 
@@ -11,34 +12,34 @@
 
 </div>
 
-`wthrr` lives in your terminal and her passion is meteorology.
+`RustWeatherApp` lives in your terminal and her passion is meteorology.
 
 If you spend time in the TUI, you'll have a little companion nearby who knows about the weather.
 
 ## Contents
 
-- [How to use?](https://github.com/ttytm/wthrr-the-weathercrab#how-to-use)
-- [Showcase](https://github.com/ttytm/wthrr-the-weathercrab#showcase)
-- [Config](https://github.com/ttytm/wthrr-the-weathercrab#config)
-- [Installation](https://github.com/ttytm/wthrr-the-weathercrab#installation)
-- [Outlook](https://github.com/ttytm/wthrr-the-weathercrab#outlook)
-- [Credits](https://github.com/ttytm/wthrr-the-weathercrab#credits)
+- [How to use?](https://github.com/chrohangurjar1/RustWeatherApp#how-to-use)
+- [Showcase](https://github.com/chrohangurjar1/RustWeatherApp#showcase)
+- [Config](https://github.com/chrohangurjar1/RustWeatherApp#config)
+- [Installation](https://github.com/chrohangurjar1/RustWeatherApp#installation)
+- [Outlook](https://github.com/chrohangurjar1/RustWeatherApp#outlook)
+- [Credits](https://github.com/chrohangurjar1/RustWeatherApp#credits)
 
 ## How to use?
 
 **Just call**
 
 ```
-wthrr
+RustWeatherApp
 ```
 
-Without having added an address or options, wthrr uses the [config](https://github.com/ttytm/wthrr-the-weathercrab#config) saved as default.<br>
-If you haven't configured anything as default yet, wthrr can try to search for a weather station near you and save the searched location as default.
+Without having added an address or options, RustWeatherApp uses the [config](https://github.com/chrohangurjar1/RustWeatherApp#config) saved as default.<br>
+If you haven't configured anything as default yet, RustWeatherApp can try to search for a weather station near you and save the searched location as default.
 
 **It's always possible to specify an address.** E.g.,
 
 ```
-wthrr melbourne
+RustWeatherApp melbourne
 ```
 
 Depending on the place you are looking for, you might need to be more specific.
@@ -48,21 +49,21 @@ If the address contains spaces, separate them with a hyphen or enclose them in q
 To search explicitly for a weather station in the vicinity, call
 
 ```
-wthrr auto
+RustWeatherApp auto
 ```
 
-As a final example, we instruct wthrr to use Fahrenheit and mph as units and add the hourly forecast for the day
+As a final example, we instruct RustWeatherApp to use Fahrenheit and mph as units and add the hourly forecast for the day
 
 ```
-wthrr -u f,mph -f d
+RustWeatherApp -u f,mph -f d
 ```
 
 ### Find further usage parameters in the help information
 
 ```
-> wthrr -h
+> RustWeatherApp -h
 
-Usage: wthrr [OPTIONS] [ADDRESS]
+Usage: RustWeatherApp [OPTIONS] [ADDRESS]
 
 Arguments:
   [ADDRESS]
@@ -80,7 +81,7 @@ Options:
   -s, --save
           Save the supplied values as default
   -r, --reset
-          Wipe wthrr's configuration data
+          Wipe RustWeatherApp's configuration data
   -h, --help
           Print help
   -V, --version
@@ -98,11 +99,11 @@ Options:
 |                                         |                                         |
 
 <sup>\*Rendering and colors are influenced by the terminal used and its theme and font.<br>
-E.g., the first of the above screenshots show wthrr in nvim(toggleterm) using kitty as terminal with a Dracula theme and JetBrainsMono Nerd font. The last screenshot shows wthrr in Yakuake/Konsole, also with a Dracula color scheme.</sup>
+E.g., the first of the above screenshots show RustWeatherApp in nvim(toggleterm) using kitty as terminal with a Dracula theme and JetBrainsMono Nerd font. The last screenshot shows RustWeatherApp in Yakuake/Konsole, also with a Dracula color scheme.</sup>
 
 ## Config
 
-The address, units and default forecast can be saved as default values in wthrr's config file by adding the `-s` flag to a run. This will save the config in `wthrr.ron`.
+The address, units and default forecast can be saved as default values in RustWeatherApp's config file by adding the `-s` flag to a run. This will save the config in `RustWeatherApp.ron`.
 
 **Platform locations:**<br>
 Lin: `~/.config/weathercrab/`<br>
@@ -139,14 +140,14 @@ Win: `%USERPROFILE%\AppData\Roaming\weathercrab\`
 
 ## Installation
 
-Use rusts package manger to install wthrr.
+Use rusts package manager to install RustWeatherApp.
 
 **From crates.io**
 
 |             |                       |
 | ----------- | --------------------- |
 | **Version** | **Command**           |
-| release     | `cargo install wthrr` |
+| release     | `cargo install RustWeatherApp` |
 |             |                       |
 | development | _not available_       |
 |             |                       |
@@ -156,28 +157,28 @@ Use rusts package manger to install wthrr.
 |             |                                                                                   |
 | ----------- | --------------------------------------------------------------------------------- |
 | **Version** | **Command**                                                                       |
-| release     | `cargo install --git https://github.com/ttytm/wthrr-the-weathercrab --tag v1.1.1` |
+| release     | `cargo install --git https://github.com/chrohangurjar1/RustWeatherApp --tag v1.1.1` |
 |             |                                                                                   |
-| development | `cargo install --git https://github.com/ttytm/wthrr-the-weathercrab`              |
+| development | `cargo install --git https://github.com/chrohangurjar1/RustWeatherApp`              |
 |             |                                                                                   |
 
-**Requirements and alternative, platform-specific installation instructions can be found in [`INSTALL.md`](https://github.com/ttytm/wthrr-the-weathercrab/blob/main/INSTALL.md).**
+**Requirements and alternative, platform-specific installation instructions can be found in [`INSTALL.md`](https://github.com/chrohangurjar1/RustWeatherApp/blob/main/INSTALL.md).**
 
 > **Important**
 > To display symbols correctly, the used terminal must be configured to use a NerdFont.
 
 ## Outlook
 
-The [issues](https://github.com/ttytm/wthrr-the-weathercrab/issues) section lists some of the features that are being worked on.
+The [issues](https://github.com/chrohangurjar1/RustWeatherApp/issues) section lists some of the features that are being worked on.
 
 Contributions like 🐛bug reports, ⭐️stars and 💡suggestions are welcome alike!
 
-A simple changelog can be found on the [releases page](https://github.com/ttytm/wthrr-the-weathercrab/releases).
+A simple changelog can be found on the [releases page](https://github.com/chrohangurjar1/RustWeatherApp/releases).
 
 ## Contributors
 
-<a href="https://github.com/ttytm/wthrr-the-weathercrab/graphs/contributors">
-  <img height='48' src="https://contrib.rocks/image?repo=ttytm/wthrr-the-weathercrab&columns=24" />
+<a href="https://github.com/chrohangurjar1/RustWeatherApp/graphs/contributors">
+  <img height='48' src="https://contrib.rocks/image?repo=chrohangurjar1/RustWeatherApp&columns=24" />
 </a>
 
 ## Credits
@@ -188,12 +189,7 @@ A simple changelog can be found on the [releases page](https://github.com/ttytm/
 
 <!-- Images -->
 
-[preview]: https://github.com/ttytm/wthrr-the-weathercrab/assets/34311583/58780205-816b-4cfd-95f8-9453e754eb94
-[crates_io_shield]: https://img.shields.io/crates/v/wthrr?style=flat-square&color=DEA584
-[ci_shield]: https://img.shields.io/github/actions/workflow/status/ttytm/wthrr-the-weathercrab/ci.yml?branch=main&style=flat-square
-[last_commit_shield]: https://img.shields.io/github/last-commit/ttytm/wthrr-the-weathercrab?style=flat-square
-[msrv_shield]: https://img.shields.io/badge/MSRV-1.74.0-DEA584?style=flat-square
-[first_run]: https://user-images.githubusercontent.com/34311583/219735581-8036590f-8354-47fb-a31f-055be79c9229.png
-[hourly_forecast]: https://user-images.githubusercontent.com/34311583/219735474-d8e2899d-c209-46d3-a5cd-bea4ed41ac3c.png
-[weekly_forecast]: https://user-images.githubusercontent.com/34311583/219735452-9766d692-a79b-4a5a-a903-30a3339cc684.png
-[terminal_colors]: https://user-images.githubusercontent.com/34311583/219735417-6376c599-4b90-4066-8808-d9bd8649ae64.png
+[preview]: https://github.com/chrohangurjar1/RustWeatherApp/assets/34311583/58780205-816b-4cfd-95f8-9453e754eb94
+[crates_io_shield]: https://img.shields.io/crates/v/RustWeatherApp.svg
+[last_commit_shield]: https://img.shields.io/github/last-commit/chrohangurjar1/RustWeatherApp/main.svg
+[ci_shield]: https://img.shields.io/github/workflow
