@@ -1,0 +1,53 @@
+[package]
+name = "wthrr"
+version = "1.2.1"
+authors = ["Turiiya <tobmoj@web.de>"]
+edition = "2021"
+license = "MIT"
+description = "Weather companion for the terminal"
+readme = "README.md"
+homepage = "https://github.com/ttytm/wthrr-the-weathercrab"
+repository = "https://github.com/ttytm/wthrr-the-weathercrab"
+keywords = ["cli", "weather", "meteorological", "terminal"]
+categories = ["command-line-utilities"]
+rust-version = "1.74.0"
+
+[dependencies]
+anyhow = "1.0"
+chrono = { version = "0.4", default-features = false, features = [
+	"clock",
+	"unstable-locales",
+] }
+clap = { version = "4.5", default-features = false, features = [
+	"derive",
+	"std",
+	"help",
+	"usage",
+	"error-context",
+	"suggestions",
+] }
+directories = "5.0"
+dialoguer = { version = "0.11", default-features = false }
+futures = "0.3"
+optional_struct = "0.5"
+regex = { version = "1.10" }
+reqwest = { version = "0.12", features = ["json"] }
+ron = "0.8"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+strum = "0.26"
+strum_macros = "0.26"
+tokio = { version = "1", features = ["macros", "rt-multi-thread"] }
+scopeguard = "1.2"
+unicode-width = "0.2"
+
+[dev-dependencies]
+strip-ansi-escapes = "0.2"
+
+[profile.release]
+strip = true
+lto = true
+
+[[bin]]
+name = "wthrr"
+path = "src/main.rs"
