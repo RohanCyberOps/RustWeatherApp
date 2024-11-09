@@ -4,7 +4,6 @@
 [![][ci_shield]](https://github.com/chrohangurjar1/RustWeatherApp/actions/workflows/ci.yml?query=branch%3Amain)
 [![][last_commit_shield]](https://github.com/chrohangurjar1/RustWeatherApp/commits/main)
 [![][crates_io_shield]](https://crates.io/crates/RustWeatherApp)
-[![][msrv_shield]](https://github.com/chrohangurjar1/RustWeatherApp)
 
 <div align="center">
 
